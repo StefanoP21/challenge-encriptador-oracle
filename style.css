@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-body {
+html {
     background: #E5E5E5;
 }
 
@@ -73,7 +73,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
+    padding: 0px;
     gap: 8px;
 
     position: absolute;
@@ -198,7 +198,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
+    padding: 0px;
     gap: 16px;
 
     position: absolute;
@@ -246,13 +246,17 @@ body {
     flex-grow: 0;
 }
 
-#resultado {
+/* #resultado {
     position: absolute;
     left: 1182px;
     top: 72px;
-}
+} */
 
 #resultado-texto {
+    position: absolute;
+    left: 1182px;
+    top: 72px;
+
     width: 336px;
     height: 700px;
 
@@ -293,6 +297,11 @@ body {
     border: 1px solid #0A3871;
     border-radius: 24px;
 
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
     cursor: pointer;
 }
 
@@ -309,4 +318,141 @@ body {
     flex: none;
     order: 0;
     flex-grow: 1;
+}
+
+#autor {
+    position: absolute;
+    top: 910px;
+    left: 235px;
+}
+
+#autor p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #495057;
+    opacity: 0.8;
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+
+    #logo {
+        position: absolute;
+        left: 0px;
+        top: 40px;
+    }
+
+    #logo img {
+        width: 60%;
+        height: auto;
+    }
+    
+    #texto {
+        position: absolute;
+        left: 40px;
+        top: 210px;
+    }
+
+    #area-texto {
+        width: 688px;
+        height: 400px;
+    }
+
+    #advertencia {
+        position: absolute;
+        left: 40px;
+        top: 750px;
+    }
+
+    #botones {
+        position: absolute;
+        left: 40px;
+        top: 790px;
+    }
+
+    #rectangulo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+        position: absolute;
+        width: 688px;
+        height: 200px;
+        left: 40px;
+        top: 920px;
+    }
+
+    #munieco img{
+        position: absolute;
+        width: 25%;
+        height: auto;
+        left: 530px;
+        top: 40px;
+    }
+
+    #mensaje {
+        position: absolute;
+        left: 72px;
+        top: 985px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    #p1 {
+        width: 624px;
+        height: 29px;
+    }
+
+    #p2 {
+        width: 624px;
+        height: 24px;
+    }
+
+    #autor {
+        position: absolute;
+        top: 1220px;
+        left: 40px;
+    }
+
+    #resultado-texto {
+        position: absolute;
+        left: 72px;
+        top: 940px;
+
+        width: 624px;
+        height: 150px;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    #copiar {
+        position: absolute;
+        left: 72px;
+        top: 1150px;
+    }
+
+    #boton-copiar {
+        width: 624px;
+        height: 67px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    
+
+
 }
